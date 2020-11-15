@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>SpaceX Launch Programs</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/script.js"></script>
+</head>
+<body onload="loadData()">
+    <div class="wrapper">
+        <h2>SpaceX Launch Programs</h2>
+      <div class="inner-wrapper">
+        <div class="left-block">
+            <div class="left-inner">
+                <h2>Filter</h2>
+                <div class="filter-block"><div class="filter-head">Launch Year</div>
+                <div class="btn-wraper" onclick="loadData(event , 'launch_year')">
+                    <span> <button value="2006">2006</button></span>
+                    <span> <button value="2007">2007</button></span>
+                    <span> <button value="2008">2008</button></span>
+                    <span> <button value="2009">2009</button></span>
+                    <span> <button value="2010">2010</button></span>
+                    <span> <button value="2011">2011</button></span>
+                    <span> <button value="2012">2012</button></span>
+                    <span> <button value="2013">2013</button></span>
+                    <span> <button value="2014">2014</button></span>
+                    <span> <button value="2015">2015</button></span>
+                    <span> <button value="2016">2016</button></span>
+                    <span> <button value="2017">2017</button></span>
+                    <span> <button value="2018">2018</button></span>
+                    <span> <button value="2019">2019</button></span>
+                    <span> <button value="2020">2020</button></span>
+                </div></div>
+                <div class="filter-block"><div class="filter-head">Successful Launch </div>
+                <div class="btn-wraper" onclick="loadData(event , 'launch_success')">
+                    <span> <button value="true">True</button></span>
+                    <span> <button value="=false">False</button></span>
+                
+                   
+                </div></div>
+                <div class="filter-block"><div class="filter-head">Successful Landing</div>
+                <div class="btn-wraper" onclick="loadData(event, 'land_success')">
+                    <span> <button value="true">True</button></span>
+                    <span> <button value="false">False</button></span>
+                   
+                   
+                </div></div>
+                
+            </div>
+        </div>
+        <div class="right-block">
+
+            <div class="card-row" id="cards">
+                <div>Loading.....</div>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{background: #f2f2f2;font-family: 'Roboto', sans-serif;margin:0;padding: 0;}
+ul{margin: 0;}
+.wrapper{display: flex; margin: 0 auto;width: 80%;justify-content: space-between;flex-flow: column;    max-width: 1440px;}
+.card-row{display: flex;justify-content: flex-start;flex-wrap: wrap;}
+.left-block{width: 16%;background: #fff;border-radius: 5px;    margin-bottom: 15px;}
+.left-inner{padding: 20px;}
+.right-block{width: 80%;}
+.card{    background: #fff;
+    width: 18%;
+    border-radius: 5px;
+    margin-right: 14px;    margin-bottom: 20px;}
+.card-inner{padding: 20px;}
+.img-block{background: #f2f2f2;    text-align: center;    padding: 20px;}
+.img-block img{width: 90%;}
+.body-row{display: flex;justify-content: space-between;}
+.head{font-weight: bold;max-width: 60%;}
+.card-head{color:#47539d;font-weight: bold;margin-top: 8px;margin-bottom: 8px;}
+.data-row{margin-bottom: 10px;display: flex;justify-content: space-between;}
+
+.data-row:first-child{margin-bottom: 10px;    display: flex;    justify-content: space-between;    flex-flow: column;}
+.data-row:first-child .head{max-width: 100%;}
+.data-row.miss-id{flex-flow: column;}
+.data-row span:last-child{text-align: right;}
+.data-row.miss-id .head{margin-bottom: 6px;}
+.inner-wrapper{display: flex;justify-content: space-between;}
+/* Left block */
+.btn-wraper button{    background: #c5e09b;
+    color: #000;
+    border: none;
+    padding: 8px 17px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    pointer-events: auto;
+}
+.btn-wraper{display: flex;
+    justify-content: space-between;flex-wrap: wrap; pointer-events: none;}
+    .btn-wraper span{width: 50%;}
+    .btn-wraper span:nth-of-type(2n){text-align: right;}
+    .filter-head{    text-align: center;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding-bottom: 6px;}
+        .filter-block{margin-bottom: 20px;}
+/* Media Queries */
+@media only screen and (min-width: 1440px) 
+{ 
+    
+}
+@media (min-width:1024px) and (max-width:1440px){
+   
+    .card {width: 30%;border-radius: 5px;margin-bottom: 15px;}
+    .right-block {
+       width: 68%;
+   }
+   .left-block {
+       width: 28%;
+      
+   }
+   .card-row .card:nth-of-type(3n){margin-right: 0;}
+}
+@media (min-width:700px) and (max-width:1024px){
+     
+     .card {width: 100%;border-radius: 5px;margin-bottom: 15px;}
+     .right-block {
+        width: 57%;
+    }
+    .left-block {
+        width: 40%;
+       
+    }
+}
+@media only screen and (max-width: 700px) 
+{   
+
+.left-block,.right-block{width: 100%;  margin-bottom: 15px;}
+.inner-wrapper{flex-flow: column;}
+.card-row {flex-flow: column;}
+.card {width: 100%;margin-bottom: 15px;}
+
+}
